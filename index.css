@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*end of default reset and ending with borderbox*/
+
+/*code starts here*/
+
+* {
+	box-sizing: border-box;
+	line-height: 2rem;
+}/*every element have affect*/
+
+/*this sets all fonts to 10px so you can use rem more easily,
+background image of site and font style from google*/
+html {
+	font-size: 62.5%;
+	font-family: 'Playfair Display', serif;
+}
+
+
+/*sizing of elements goes below*/
+h1 {
+	font-size: 8rem;
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
+p, li, a {
+ 	font-size: 1.8rem;
+ 	line-height: 1.6;
+ }
+
+
+
+/*Centering everything on page, adding color background color*/
+body {
+	background: url(images/backgroundWebsite.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 80%;
+	margin: 0 auto;	
+
+
+}
+
+
+/*giving space between each section of page*/
+nav, header, section, footer {
+	margin: 2%;
+}
+
+p, li {
+	margin: 1% 0%;
+
+}
+
+/*Detailing page*/
+
+/*nav bar*/
+
+.nav-item .nav-link {
+	color: #66FCF1;
+	font-size: 2rem;
+}
+
+.nav-item a:hover {
+	color: rgb(197, 198, 199);
+	font-size: 3rem;
+}
+
+
+/*header*/
+
+
+.home {
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #1F2833;
+}
+
+
+.headerInfo {
+	display: flex;
+	align-self: center;
+	margin: 2%;
+}
+
+.sideCenterColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #66FCF1;
+	margin-left: 5%;
+}
+
+.headerInfo img {
+	border-radius: 50%;
+	margin-left: 2%;
+	width: 40%;
+	height: 80%;
+}
+
+/*abou section*/
+
+.about {
+	 /* shade blackish*/
+	padding: 2%;
+	border-radius: 10px;
+	background-color: rgba(11,12,16,0.7);
+}
+
+.about h4, .about p {
+	color: rgb(197, 198, 199);
+}
+
+/*skills section*/
+.skillsAndPortfolio {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(11,12,16,0.7);
+	padding: 2%;
+	border-radius: 10px;
+}
+.skills {
+	background-color: #45A29E;
+	color: rgb(197, 198, 199);
+
+	padding: 2%;
+	border-radius: 10px;
+	width: 40%;
+}
+
+.skills, .skills ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+/*portfolio section*/
+
+.portfolio {
+	background-color: #45A29E;
+	color: rgb(197, 198, 199);
+	padding: 2%;
+	border-radius: 10px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.portfolio a {
+	color: rgb(197, 198, 199);
+	margin-top: 1%;
+}
+
+.portfolio a:hover {
+	color: rgb(197, 198, 199);
+	margin-top: 1%;
+	font-size: 3rem;
+	cursor: pointer;
+
+}
+
+
+/*contact section*/
+.contact {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(11,12,16,0.7);
+	color: rgb(197, 198, 199);
+	padding: 2%;
+	border-radius: 10px;
+}
+
+.contactLeft {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.contactLeft p{
+	margin: 2%;
+}
+
+form {
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 1%;
+
+}
+
+form input, form textarea {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+input[type=submit], input[type=reset]{
+	padding: 1%;
+	font-size: 2rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #45A29E;
+	color: rgb(197, 198, 199);
+	margin: 2% 20% ;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	padding: 1%;
+	font-size: 3rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #45A29E;
+	color: rgb(197, 198, 199);
+	margin: 2% 20% ;
+	cursor: pointer;
+}
+
+/* footer*/
+
+.footerInfo {
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+	color: rgb(197, 198, 199);
+}
